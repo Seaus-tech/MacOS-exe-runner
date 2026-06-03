@@ -1,0 +1,19 @@
+# Xcode user data and build artifacts
+build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+.DS_Store
+
+# Swift Package Manager build artifacts
+.build/
+.swiftpm/
+
+# Architecture Runtimes (Do not check massive pre-compiled Wine binaries into Git history)
+# Instead, document how to download them or use a build script to fetch them.
+Runtimes/
+
+# Crash logs and diagnostics
+*.crash
+*.gpu
