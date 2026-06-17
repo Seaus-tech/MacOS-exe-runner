@@ -1,8 +1,8 @@
-# Xcode user data and build artifacts
+# Xcode /Users/YashB/Seaususer data and build artifacts
 build/
 DerivedData/
 *.xcodeproj/xcuserdata/
-*.xcworkspace/xcuserdata/
+*.xc/Users/YashB/Seaus/.vscodeworkspace/xcuserdata/
 *.xcuserstate
 .DS_Store
 
