@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 
 struct AIAnalysisRequest: Encodable {
     let email: String
