@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var prefixExes: [String] = []
 
     @AppStorage("recentExes") private var recentExesData: Data = Data()
+    @AppStorage("macexe.ai.approved") private var aiApproved = false
 
     var recentExes: [String] {
         (try? JSONDecoder().decode([String].self, from: recentExesData)) ?? []
@@ -49,15 +50,22 @@ struct ContentView: View {
                     Button {
                         showWaitlist = true
                     } label: {
-                        Label("AI", systemImage: "brain.head.profile")
+                        Label(aiApproved ? "AI Approved" : "AI", systemImage: aiApproved ? "checkmark.circle.fill" : "brain.head.profile")
                             .font(.caption)
+                            .foregroundStyle(aiApproved ? .green : .primary)
                             .padding(.horizontal, 8).padding(.vertical, 4)
                     }
                     .buttonStyle(.bordered)
                     .glassEffect(.regular, in: RoundedRectangle(cornerRadius: 8))
                 }
                 .padding(.horizontal, 4)
-                .sheet(isPresented: $showWaitlist) { WaitlistView() }
+                .sheet(isPresented: $showWaitlist) {
+                    if aiApproved {
+                        AIView(targetFilePath: $targetFilePath, extraArgs: $extraArgs, logOutput: wineManager.logOutput)
+                    } else {
+                        WaitlistView()
+                    }
+                }
 
                 // Input panel
                 VStack(spacing: 8) {
