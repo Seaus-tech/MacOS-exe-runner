@@ -1,15 +1,3 @@
-# Xcode /Users/YashB/Seaususer data and build artifacts
-build/
-DerivedData/
-*.xcodeproj/xcuserdata/
-*.xc/Users/YashB/Seaus/.vscodeworkspace/xcuserdata/
-*.xcuserstate
-.DS_Store
-
-# Swift Package Manager build artifacts
-.build/
-.swiftpm/
-
 # Architecture Runtimes (Do not check massive pre-compiled Wine binaries into Git history)
 # Instead, document how to download them or use a build script to fetch them.
 Runtimes/
