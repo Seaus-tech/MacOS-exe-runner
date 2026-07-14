@@ -1,10 +1,10 @@
 # 🍷 MACEXE: macOS Windows Executable Runner
 
-<p align="center>
+<p align="center">
   <strong>Run Windows <code>.exe</code> binaries natively on macOS with isolated sandboxing and AI-powered log analysis.</strong>
 </p>
 
-<p align="center>
+<p align="center">
   <img src="https://img.shields.io/badge/Platform-macOS-blue?style=flat-square&logo=apple" alt="macOS" />
   <img src="https://img.shields.io/badge/Language-SwiftUI-orange?style=flat-square&logo=swift" alt="SwiftUI" />
   <img src="https://img.shields.io/badge/Runtime-Wine-red?style=flat-square&logo=wine" alt="Wine" />
@@ -81,6 +81,6 @@ MacOS-exe-runner/
 
 ---
 
-<p align="center>
+<p align="center">
   <sub>© 2026 Seaus Tech. All rights reserved.</sub>
 </p>
