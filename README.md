@@ -1,5 +1,11 @@
 # 🍷 MACEXE: macOS Windows Executable Runner
 
+### THIS REPOSITORY HAS REACHED THE END OF SUPPORT. USE WX FROM AURORA-SHELL BY RUNNING COMMANDS:
+```bash
+bash <(curl -s https://raw.githubusercontent.com/Seaus-tech/Aurora-Shell/<BRANCH>/install.sh)
+shell.aurora -mc
+shell install wx
+```
 <p align="center>
   <strong>Run Windows <code>.exe</code> binaries natively on macOS with isolated sandboxing and AI-powered log analysis.</strong>
 </p>
